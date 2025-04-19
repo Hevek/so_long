@@ -6,7 +6,15 @@
 /*   By: restevez <restevez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 19:49:15 by restevez          #+#    #+#             */
-/*   Updated: 2025/03/15 19:49:16 by restevez         ###   ########.fr       */
+/*   Updated: 2025/04/19 01:06:10 by restevez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "minilibx-linux/mlx.h"
+
+int	main(void)
+{
+	void	*mlx;
+
+	mlx = mlx_init();
+}
