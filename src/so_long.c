@@ -6,7 +6,7 @@
 /*   By: restevez <restevez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 19:49:15 by restevez          #+#    #+#             */
-/*   Updated: 2025/04/19 03:06:59 by restevez         ###   ########.fr       */
+/*   Updated: 2025/04/19 03:33:25 by restevez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,13 @@ void	ft_hook(void* param)
 
 	if (mlx_is_key_down(mlx, MLX_KEY_ESCAPE))
 		mlx_close_window(mlx);
-	if (mlx_is_key_down(mlx, MLX_KEY_UP))
+	if (mlx_is_key_down(mlx, MLX_KEY_UP) || mlx_is_key_down(mlx, MLX_KEY_W))
 		image->instances[0].y -= 5;
-	if (mlx_is_key_down(mlx, MLX_KEY_DOWN))
+	if (mlx_is_key_down(mlx, MLX_KEY_DOWN) || mlx_is_key_down(mlx, MLX_KEY_S))
 		image->instances[0].y += 5;
-	if (mlx_is_key_down(mlx, MLX_KEY_LEFT))
+	if (mlx_is_key_down(mlx, MLX_KEY_LEFT) || mlx_is_key_down(mlx, MLX_KEY_A))
 		image->instances[0].x -= 5;
-	if (mlx_is_key_down(mlx, MLX_KEY_RIGHT))
+	if (mlx_is_key_down(mlx, MLX_KEY_RIGHT) || mlx_is_key_down(mlx, MLX_KEY_D))
 		image->instances[0].x += 5;
 }
 
